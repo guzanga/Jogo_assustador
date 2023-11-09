@@ -1,0 +1,19 @@
+.header{
+    background-color: #12292E;
+}
+
+.titulo{
+    display: flex;
+    padding: 15px;
+    color: #69836E;
+    justify-content: center;
+    font-size: 50px;
+}
+
+.frase {
+    display: flex;
+    padding: 5px;
+    color: #69836E;
+    justify-content: center;
+    font-size: 30px;
+}
