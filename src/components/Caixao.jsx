@@ -3,13 +3,22 @@ import {useState} from "react";
 
 function Caixao(props){
 
-    const [Aberto, setAberto] = useState(false)
+  function som() {
+        let audio = new Audio("/RisadaBruxa.mp3")
+        audio.play()
+    }
 
+    const [Aberto, setAberto] = useState(false)
+    // função que altera pontos e muda imagem
     function click(){
         setAberto(true)
 
         if (props.bixo1 !== props.numero && props.bixo2 !== props.numero && props.bixo3 !== props.numero){
             props.setPontos(props.pontos + 10)
+        }
+        else{
+            props.setPontos(props.pontos - 10)
+            som()
         }
 
     }
